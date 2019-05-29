@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+background-color: #ffffb3
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: #ffffb3
+}
+
+
+QLineEdit{
+background-color: #e6e6e6;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>700</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { color: black; background-color: #f3703c }</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="clientIDLabel">
+            <property name="text">
+             <string>Client ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="clientIDLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="senderSNameLabel">
+            <property name="text">
+             <string>Sender's Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="senderSNameLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="pickupAddressLine1Label">
+            <property name="text">
+             <string>Pickup Address Line 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="pickupAddressLine1LineEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="pickupAddressLine2Label">
+            <property name="text">
+             <string>Pickup Address Line 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="pickupAddressLine2LineEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="pickupAddressLine3Label">
+            <property name="text">
+             <string>Pickup Address Line 3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="pickupAddressLine3LineEdit"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="pickupCityLabel">
+            <property name="text">
+             <string>Pickup City</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="pickupCityLineEdit"/>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="pickupProvinceLabel">
+            <property name="text">
+             <string>Pickup Province</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="pickupProvinceLineEdit"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="pickupPostalCodeLabel">
+            <property name="text">
+             <string>Pickup Postal Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="pickupPostalCodeLineEdit"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="recipientSNameLabel">
+            <property name="text">
+             <string>Recipient's Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="recipientSNameLineEdit"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="deliveryAddressLine1Label">
+            <property name="text">
+             <string>Delivery Address Line 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLineEdit" name="deliveryAddressLine1LineEdit"/>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="deliveryAddressLine2Label">
+            <property name="text">
+             <string>Delivery Address Line 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="deliveryAddressLine2LineEdit"/>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="deliveryAdrressLine3Label">
+            <property name="text">
+             <string>Delivery Adrress Line 3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLineEdit" name="deliveryAdrressLine3LineEdit"/>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="deliveryCityLabel">
+            <property name="text">
+             <string>Delivery City</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLineEdit" name="deliveryCityLineEdit"/>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="deliveryProvinceLabel">
+            <property name="text">
+             <string>Delivery Province</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="deliveryProvinceLineEdit"/>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="deliveryPostalCodeLabel">
+            <property name="text">
+             <string>Delivery Postal Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="deliveryPostalCodeLineEdit"/>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="deliveryCountryAbreviationLabel">
+            <property name="text">
+             <string>Delivery Country Abr</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="deliveryCountryAbreviationLineEdit"/>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="uniqueBarcodeOnPkgLabel">
+            <property name="text">
+             <string>Unique Barcode on Pkg</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QLineEdit" name="uniqueBarcodeOnPkgLineEdit"/>
+          </item>
+          <item row="17" column="0">
+           <widget class="QPushButton" name="Import">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Import</string>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="1">
+           <widget class="QPushButton" name="AddRow">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>AddRow</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_2">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="sendersReferenceNumberLabel">
+            <property name="text">
+             <string>Senders Reference Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="sendersReferenceNumberLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="shipmentReferenceNumberLabel">
+            <property name="text">
+             <string>Shipment Reference Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="shipmentReferenceNumberLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="pieceNumberForShipmentLabel">
+            <property name="text">
+             <string>Piece Number for Shipment</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="pieceNumberForShipmentLineEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="pieceWeightLabel">
+            <property name="text">
+             <string>Piece Weight</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="pieceWeightLineEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="unitOfMeasurementLabel">
+            <property name="text">
+             <string>Unit of Measurement</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="unitOfMeasurementLineEdit"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="specialInstructionsLabel">
+            <property name="text">
+             <string>Special instructions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="specialInstructionsLineEdit"/>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="serviceTypeLabel">
+            <property name="text">
+             <string>Service Type</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="serviceTypeLineEdit"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="recipientPhoneNumberLabel">
+            <property name="text">
+             <string>Recipient Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="recipientPhoneNumberLineEdit"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="recipientEmailAddressLabel">
+            <property name="text">
+             <string>Recipient Email Address</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="recipientEmailAddressLineEdit"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="pickupCountryAbrvLabel">
+            <property name="text">
+             <string>Pickup Country Abrv</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLineEdit" name="pickupCountryAbrvLineEdit"/>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="pieceDescriptionLabel">
+            <property name="text">
+             <string>Piece Description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="pieceDescriptionLineEdit"/>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="routeCodeLabel">
+            <property name="text">
+             <string>Route Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLineEdit" name="routeCodeLineEdit"/>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="senderSPhoneLabel">
+            <property name="text">
+             <string>Sender's Phone</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLineEdit" name="senderSPhoneLineEdit"/>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="reference3Label">
+            <property name="text">
+             <string>Reference 3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="reference3LineEdit"/>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="reference4Label">
+            <property name="text">
+             <string>Reference 4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="reference4LineEdit"/>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="laborCodeLabel">
+            <property name="text">
+             <string>Labor Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="laborCodeLineEdit"/>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="jobOptionLabel">
+            <property name="text">
+             <string>Job Option</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QLineEdit" name="jobOptionLineEdit"/>
+          </item>
+          <item row="17" column="1">
+           <widget class="QPushButton" name="Clear">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_3">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="emailNotificationOptionLabel">
+            <property name="text">
+             <string>Email Notification Option</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="EmailNotificationOptionLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="additionalBarcodeLabel">
+            <property name="text">
+             <string>Additional Barcode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="additionalBarcodeLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="massEmailNotificationsLabel">
+            <property name="text">
+             <string>Mass Email notifications</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="massEmailNotificationsLineEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="requestedDateTimeLabel">
+            <property name="text">
+             <string>Requested Date Time</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="requestedDateTimeLineEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="specialMobileInstructionsLabel">
+            <property name="text">
+             <string>Special Mobile Instructions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="specialMobileInstructionsLineEdit"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="readyLabel">
+            <property name="text">
+             <string>Ready</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="readyLineEdit"/>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="lengthLabel">
+            <property name="text">
+             <string>Length</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="lengthLineEdit"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="widthLabel">
+            <property name="text">
+             <string>Width</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="widthLineEdit"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="heightLabel">
+            <property name="text">
+             <string>Height</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="heightLineEdit"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="uOMLengthLabel">
+            <property name="text">
+             <string>UOM Length</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLineEdit" name="uOMLengthLineEdit"/>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="paymentTypeCodeLabel">
+            <property name="text">
+             <string>Payment Type Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="paymentTypeCodeLineEdit"/>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="overridenCostLabel">
+            <property name="text">
+             <string>Overriden Cost</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLineEdit" name="overridenCostLineEdit"/>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="jobDescriptionLabel">
+            <property name="text">
+             <string>Job Description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLineEdit" name="jobDescriptionLineEdit"/>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="salesOrderNumberLabel">
+            <property name="text">
+             <string>Sales Order Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="salesOrderNumberLineEdit"/>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="secondRouteCodeLabel">
+            <property name="text">
+             <string>Second Route Code</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="secondRouteCodeLineEdit"/>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="accountNumberLabel">
+            <property name="text">
+             <string>Account Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="accountNumberLineEdit"/>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="declaredValueLabel">
+            <property name="text">
+             <string>Declared Value</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QLineEdit" name="declaredValueLineEdit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="rowCount">
+           <number>20</number>
+          </property>
+          <property name="columnCount">
+           <number>51</number>
+          </property>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="RemoveRow">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Remove Row</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Export">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Export</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
